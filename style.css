@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #b3e0ff, #e6f7ff);
@@ -19,8 +19,8 @@ header {
 }
 
 .branding {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.2em;
+    font-weight: 600;
     color: #2a4d69;
     letter-spacing: 1px;
 }
@@ -44,11 +44,12 @@ nav a {
     font-weight: bold;
     margin: 0 15px;
     font-size: 1.1em;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
     color: #4a90e2;
+    transform: scale(1.1);
 }
 
 #about, main {
@@ -69,9 +70,15 @@ nav a:hover {
 }
 
 .gallery img {
-    max-width: 30%;
+    width: 100%;
+    max-width: 280px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -83,5 +90,21 @@ footer {
     margin-top: 20px;
 }
 
+/* RESPONSIVITĀTE */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        max-width: 90%;
+    }
+}
 
 
