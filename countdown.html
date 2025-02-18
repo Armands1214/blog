@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laika atskaite</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        #countdown {
+            font-size: 3em;
+            color: red;
+            font-weight: bold;
+        }
+
+        .mystery-text {
+            font-size: 1.2em;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laika atskaite</h1>
+    <div id="countdown"></div>
+    <p class="mystery-text">Kas notiks, kad laiks beigsies?</p>
+    
+    <script>
+        function startCountdown(durationInDays) {
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + durationInDays);
+            
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                
+                if (distance < 0) {
+                    document.getElementById("countdown").innerHTML = "Laiks ir beidzies...";
+                }
+            }
+            
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+        }
+        
+        startCountdown(100);
+    </script>
+</body>
+</html>
