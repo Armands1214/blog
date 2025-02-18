@@ -11,22 +11,27 @@ body {
 
 header {
     text-align: center;
-    padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.9);
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.95);
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-bottom: 5px solid #4a90e2;
 }
 
 h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2a4d69;
 }
 
-p {
-    font-size: 1.2em;
-    color: #444;
+p.intro {
+    font-size: 1.3em;
+    color: #555;
     max-width: 800px;
     text-align: center;
+    font-style: italic;
 }
 
 #about, main {
@@ -36,13 +41,20 @@ p {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    text-align: center;
 }
 
-#about img {
-    max-width: 100%;
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 30%;
     border-radius: 12px;
-    display: block;
-    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #posts article {
