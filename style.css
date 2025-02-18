@@ -61,17 +61,26 @@ nav a:hover {
     text-align: center;
 }
 
-.gallery {
+.inventory {
     display: flex;
-    justify-content: center;
-    gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.gallery img {
-    max-width: 30%;
-    border-radius: 12px;
+.inventory-item {
+    max-width: 250px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.inventory-item img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 #posts article {
