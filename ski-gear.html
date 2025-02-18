@@ -1,12 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const postContainer = document.getElementById("post-container");
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slēpošanas inventārs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="branding">Armanda Blogs</div>
+        <nav>
+            <a href="index.html">Sākums</a>
+        </nav>
+    </header>
 
-    const samplePost = document.createElement("article");
-    samplePost.innerHTML = `
-        <h3>Piedzīvojums Garmišā – kad kalni pārspēj gravitāciju</h3>
-        <p><strong>Datums:</strong> 2025. gada februāris</p>
-        <p>Pagājušajā nedēļā devos uz Garmiš-Partenkirheni Vācijā, lai izbaudītu ziemas brīnumus...</p>
-    `;
+    <section id="ski-gear">
+        <h2>Slēpošanas inventārs</h2>
+        <p>Slēpošana ir mans hobijs, tāpēc nolēmu piedāvāt kvalitatīvu inventāru citiem entuziastiem. Šeit vari atrast dažādus slēpju modeļus, zābakus un citus aksesuārus.</p>
+    </section>
 
-    postContainer.appendChild(samplePost);
-});
+    <footer>
+        <p>&copy; 2025 Mans Blogs | Visas tiesības aizsargātas</p>
+    </footer>
+</body>
+</html>
