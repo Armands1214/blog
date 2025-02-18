@@ -11,27 +11,44 @@ body {
 
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     background: rgba(255, 255, 255, 0.95);
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-bottom: 5px solid #4a90e2;
+    border-bottom: 4px solid #4a90e2;
 }
 
-h1 {
-    font-size: 3em;
+.branding {
+    font-size: 2em;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     color: #2a4d69;
+    letter-spacing: 1px;
 }
 
-p.intro {
-    font-size: 1.3em;
+.intro {
+    font-size: 1.2em;
     color: #555;
     max-width: 800px;
     text-align: center;
     font-style: italic;
+    margin-top: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2a4d69;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4a90e2;
 }
 
 #about, main {
@@ -73,3 +90,4 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
+
